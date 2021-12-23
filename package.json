@@ -4,7 +4,8 @@
   "description": "",
   "main": "sendMessages.js",
   "scripts": {
-    "start": "nodemon sendMessages.js"
+    "start": "node sendMessages.js",
+    "dev": "nodemon sendMessages.js"
   },
   "keywords": [],
   "author": "",
