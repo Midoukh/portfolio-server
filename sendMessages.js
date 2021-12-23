@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 const nodemailer = require("nodemailer");
 const cors = require('cors')
@@ -9,8 +10,8 @@ const PORT = 5000
 app.use(cors())
 app.use(bodyParser())
 
-"use strict";
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
+//"use strict";
+//process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
 
 app.post('/api/box', (req, res) => {
   console.log(req.body)
