@@ -81,8 +81,8 @@ const sendEmail = async (body) => {
   }
 };
 
-app.listen(PORT, () => {
-  console.log("Server running at port ", process.env.PORT);
+app.listen(process.env.PORT || 3000, () => {
+  console.log("Server running at port ", process.env.PORT || 3000);
 });
 
 // async..await is not allowed in global scope, must use a wrapper
