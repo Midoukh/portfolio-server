@@ -4,7 +4,6 @@ const nodemailer = require("nodemailer");
 const cors = require("cors");
 
 const app = express();
-const PORT = 5000;
 
 //cors
 app.use(cors());
@@ -83,7 +82,7 @@ const sendEmail = async (body) => {
 };
 
 app.listen(PORT, () => {
-  console.log("Server running at port ", PORT);
+  console.log("Server running at port ", process.env.PORT);
 });
 
 // async..await is not allowed in global scope, must use a wrapper
